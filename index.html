@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Tienda Juegos</title>
+  </head>
+
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <div id="lista-juegos" class="container-fluid">
+      <div class="row" style="justify-items: center">
+        <!--Juego 1-->
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="https://store-images.s-microsoft.com/image/apps.7019.68640107179785665.3ff3e830-efb8-42c5-aa55-9b33b3a8192c.32387d3f-8044-4884-94ec-88928270ddee?q=90&w=177&h=265"
+            class="card-img-top" alt="" height="390px"/>
+            <div class="card-body">
+              <h5 class="card-title">assassin's creed 3 remastered</h5>
+              <p class="card-text precio">
+                $150.00
+              </p>
+              <a href="#" class="btn btn-primary agregar-carrito" data-id="1" id="btn-agregar"
+                >Agregar a Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--Juego 2-->
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTLQo-6RQplLhH4FRoKunePVM9OM0wXGzRwyHl534vHmkCcyL_KiiGBQ279O_gEdLf84caWT83QKxhqBj-r8hsuhQQ_U8adao3BMLC-RLw" 
+            class="card-img-top" alt="" height="390px" />
+            <div class="card-body">
+              <h5 class="card-title">the outer worlds</h5>
+              <p class="card-text precio">
+                $1500.00
+              </p>
+              <a href="#" class="btn btn-primary agregar-carrito" data-id="2" id="btn-agregar"
+                >Agregar a Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--Juego 3-->
+        <div class="col-sm-3">
+          <div class="card" style="width: 18rem">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTi7qrWybubanttEif7hQ_SWnGBdFd9KIgGg3RaK0obdDgRnfV6dxBlTvswWdsxwCx-J9VVzcprvN98KrN3wsVzdJrCT5Mx3u5wqeBfVraFITA9Gd-Qn5lxlA" 
+            class="card-img-top" alt="" height="390px"/>
+            <div class="card-body">
+              <h5 class="card-title">GTA V</h5>
+              <p class="card-text precio">
+                $1860.00
+              </p>
+              <a href="#" class="btn btn-primary agregar-carrito" data-id="3" id="btn-agregar"
+                >Agregar a Carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table id="lista-carrito" class="table">
+      <thead>
+        <tr>
+          <th scope="col">Imagen</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="col" >
+      <div id="liveAlertPlaceholder" class="col"></div>
+
+      <a href="#" class="borrar btn btn-primary" id="btn-vaciar">Vaciar Carrito</a>
+      <button type="button" class="btn btn-primary" id="liveAlertBtn">Hacer compra</button>
+      
+    </div>
+
+    <script  src = "app.js"></script>
+  </body>
+</html>
